@@ -192,12 +192,16 @@ a{
     top: -1500px;
     left: 439px;
     width: 415px;
-    height: 248px;
+    /* height: 248px; */
     background-color: var(--white);
     border: 1px solid #707070;
-    text-align: left;
+    /* text-align: left; */
     font: normal normal normal 15px/22px Lato;
     padding: 10px;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 button{
