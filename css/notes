@@ -1,0 +1,7 @@
+ display: flex;
+    position: relative;
+    top: -530px;
+    left: 735px;
+    width: 520px;
+    height: 120px;
+    background: var(--text) 0% 0% no-repeat padding-box;

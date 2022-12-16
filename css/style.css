@@ -1,3 +1,14 @@
+ :root{    
+    --white: #FFFFFF;
+    --text: #F5EBE0;
+    --box: #D5BDAF;
+    --photos: #EAE0D5;
+    --footer: #D6CCC2;
+    --cta: #E0AFA0;
+    --map: #E3D5CA;
+}
+
+
  /* The navigation bar */
  .navbar {
     overflow: hidden;
@@ -5,9 +16,13 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    box-shadow: 2px 2px 4px #000000a3;
+    box-shadow: 0px 3px 6px #00000029;
+    z-index: 255;
     }
     
+    .navbar-left{
+        float: left;  
+    }
     /* Links inside the navbar */
     .navbar a {
     float: right;
@@ -16,15 +31,178 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    padding-right:36px;
     }
     
     /* Change background on mouse-over */
     .navbar a:hover {
     background: #ddd;
     color: black;
+    text-decoration:underline;
     }
     
     /* Main content */
     .main {
-        margin-top: 30px; /* Add a top margin to avoid content overlay */
+        margin-top: 56px; /* Add a top margin to avoid content overlay */
     } 
+
+    body {
+    background-image: url("baner.png");
+}
+
+/*.flx {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}*/
+
+.baner{
+    width: 1255px;
+    display: flex;
+    justify-content: center;
+}
+.welcome{
+    position: relative;
+    display: flex;
+    height: 284px;
+    top:  -480px;
+    color: var(--white);
+    text-align: center;
+    justify-content: center;
+    font: normal normal 600 50px/84px Lato;
+
+}
+.explore{
+    position: relative;
+   display: flex;
+    top: -702px;
+    height: 135px;
+    color: var(--white);
+    text-align: center;
+    font: normal normal 600 23px/36px Lato;
+    justify-content:center;
+}
+.arrow1{
+    position: relative;
+    display: flex;
+    top: -730px;
+    width: 50px;
+    left: 600px;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+.main a{
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+#explenation{
+    display: flex;
+    position: relative;
+    top: -546px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font: normal normal 600 40px/80px Lato;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.explenation{
+    display: flex;
+    width: 944px;
+    text-align: center;
+    font: normal normal normal 15px/25px Lato;
+}
+
+.box{
+    display: flex;
+    position: relative;
+    top: -530px;
+    left: 735px;
+    width: 520px;
+    height: 105px;
+    background: var(--text) 0% 0% no-repeat padding-box;
+    justify-content: center;
+
+}
+
+.dots{
+    position: relative;
+    top: -464px;
+    left: 1084px;
+    height: 287px;
+}
+
+#points{
+    display: flex;
+    position: relative;
+    top: -763px;
+    left: -182px;
+    height: 297px;
+    /* flex-wrap: wrap; */
+    /* align-content: flex-end; */
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    font: normal normal 20px/0px Lato;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+
+}
+.v58{
+    position: relative;
+    font: normal normal 600 36px/ Lato;
+}
+
+.box2{
+    display: flex;
+    position: relative;
+    top: -775px;
+    left: 155px;
+    width: 565px;
+    height: 248px;
+    background: var(--box); 
+}
+  
+.photo1{
+    position: relative;
+    top: -1367px;
+    left: 110px;
+    width: 34%;
+    box-shadow: 0px 2px 2px #1e1c1c66;
+}
+
+.text-box{
+    display: flex;
+    position: relative;
+    top: -1500px;
+    left: 439px;
+    width: 415px;
+    height: 248px;
+    background-color: var(--white);
+    border: 1px solid #707070;
+    text-align: left;
+    font: normal normal normal 15px/22px Lato;
+    padding: 10px;
+}
+
+button{
+    background: var(--cta) 0% 0% no-repeat padding-box;
+    color: var(--white);
+    text-align: center;
+    font: normal normal normal 17px/23px Lato;
+}
