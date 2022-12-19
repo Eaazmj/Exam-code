@@ -1,0 +1,114 @@
+:root{    
+    --white: #FFFFFF;
+    --text: #F5EBE0;
+    --box: #D5BDAF;
+    --photos: #EAE0D5;
+    --footer: #D6CCC2;
+    --cta: #E0AFA0;
+    --map: #E3D5CA;
+    --border:#707070;
+}
+
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    box-shadow: 0px 3px 6px #00000029;
+    z-index: 255;
+}
+    
+.navbar-left{
+        float: left;  
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    padding-right:36px;
+}
+    
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+    text-decoration:underline;
+}
+    
+/* Main content */
+.main {
+    margin-top: 56px; /* Add a top margin to avoid content overlay */
+} 
+
+h2{
+    font: normal normal normal 30px/30px Lato;
+    font-weight: bolder;
+}
+
+.box4{
+    display: flex;
+    position: relative;
+    top: 1px;
+    left: 100px;
+    width: 388px;
+    height: 729px;
+    /* padding: 10px; */
+    align-content: center;
+    align-content: center;
+    /* flex-direction: row; */
+    background-color: var(--text);
+    /* padding-left: 126px; */
+}
+    
+.text3{
+    display: flex;
+    position: relative;
+    top: -682px;
+    left: 26px;
+    width: 222px;
+    text-align: left;
+    font: normal normal normal 15px/22px Lato;
+    padding: 10px;
+    flex-wrap: wrap;
+    padding-left: 126px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 50%; 
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 10px; /* Bottom margin */
+}
+    
+/* Style the submit button */
+input[type=submit] {
+    background-color: var(--cta);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+        
+/* When moving the mouse over the submit button, */
+input[type=submit]:hover {
+    background-color: var(--border);
+}
+        
+.container-submit{
+    position: relative;
+}
+.container-form {
+    position: relative;
+    top: -675px;
+    left: 152px;
+}

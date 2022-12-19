@@ -142,40 +142,54 @@ h1{
 
 }
 
-.dots{
+.navigation-item {
+
+        cursor: pointer;
+        font-weight: bolder;
+      }
+
+.navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+      }
+.dot{
+    background-color: var(--white);
     position: relative;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    border: 2px solid black;
     top: -464px;
     left: 1084px;
-    height: 287px;
 }
 
-#points{
-    display: flex;
-    position: relative;
-    top: -763px;
-    left: -182px;
-    height: 297px;
-    /* flex-wrap: wrap; */
-    /* align-content: flex-end; */
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    font: normal normal 20px/0px Lato;
-}
+.navigation-item[data-is-active] .dot {
+    background-color: var(--cta);
+ } 
+.navigation-item[data-is-active] .name {
+    font-weight: bolder;
+ }
+
 a{
     text-decoration: none;
     color: #000000;
 
 }
-.v58{
+.name{
     position: relative;
-    font: normal normal 600 36px/ Lato;
+    text-align: right;
+    top: -438px;
+    left: -185px;
+    font: normal normal normal 15px/25px Lato;
+    
 }
 
 .box2{
     display: flex;
     position: relative;
-    top: -775px;
+    top: -443px;
     left: 155px;
     width: 565px;
     height: 248px;
@@ -184,16 +198,17 @@ a{
   
 .photo1{
     position: relative;
-    top: -1367px;
+    top: -1018px;
     left: 110px;
     width: 34%;
     box-shadow: 0px 2px 2px #1e1c1c66;
 }
 
+
 .text-box{
     display: flex;
     position: relative;
-    top: -1327px;
+    top: -1183px;
     left: 427px;
     width: 415px;
     /* height: 248px; */
@@ -215,6 +230,21 @@ button{
     font: normal normal normal 17px/23px Lato;
 }
 
+.container{
+    position: relative;
+    top: -48px;
+}
+
+.content-item {
+    /* make invisible by default */
+    display: none;
+  }
+
+  .content-item[data-is-active] {
+    /* make it visible if a data attribute is present */
+    display: block;
+  }
+
 .box3{
     display: flex;
     position: relative;
@@ -224,6 +254,12 @@ button{
     height: 436px;
     background: var(--photos); 
 }
+
+.map-section{
+    position: relative;
+    top: 354px;
+}
+
 .map{
     display: flex;
     position: relative;
@@ -250,3 +286,87 @@ button{
     background-color: var(--text);
     padding-left: 126px;
 }
+
+h2{
+    font: normal normal normal 30px/30px Lato;
+    font-weight: bolder;
+}
+
+.box4{
+    display: flex;
+    position: relative;
+    top: -1291px;
+    left: 100px;
+    width: 388px;
+    height: 608px;
+    /* padding: 10px; */
+    align-content: center;
+    align-content: center;
+    /* flex-direction: row; */
+    background-color: var(--text);
+    /* padding-left: 126px; */
+}
+
+.text3{
+    display: flex;
+    position: relative;
+    top: -1882px;
+    left: 26px;
+    width: 222px;
+    text-align: left;
+    font: normal normal normal 15px/22px Lato;
+    padding: 10px;
+    flex-wrap: wrap;
+    padding-left: 126px;
+}
+
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 50%; 
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 10px; /* Bottom margin */
+    }
+    
+    /* Style the submit button */
+    input[type=submit] {
+    background-color: var(--cta);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, */
+    input[type=submit]:hover {
+      background-color: var(--border);
+    }
+    
+    .container-submit{
+        position: relative;
+    }
+    .container-form {
+        position: relative;
+        top: -1891px;
+        left: 152px;
+    }
+
+    .footer {
+        position: relative;
+        display: flex;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        background-color: var(--footer);
+        color: white;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+     }
+
+     
