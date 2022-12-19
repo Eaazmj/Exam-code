@@ -6,6 +6,7 @@
     --footer: #D6CCC2;
     --cta: #E0AFA0;
     --map: #E3D5CA;
+    --border:#707070;
 }
 
 
@@ -50,11 +51,14 @@
     background-image: url("baner.png");
 }
 
-/*.flx {
+.flx {
     display: flex;
     justify-content: center;
     gap: 10px;
-}*/
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
 
 .baner{
     width: 1255px;
@@ -189,8 +193,8 @@ a{
 .text-box{
     display: flex;
     position: relative;
-    top: -1500px;
-    left: 439px;
+    top: -1327px;
+    left: 427px;
     width: 415px;
     /* height: 248px; */
     background-color: var(--white);
@@ -209,4 +213,40 @@ button{
     color: var(--white);
     text-align: center;
     font: normal normal normal 17px/23px Lato;
+}
+
+.box3{
+    display: flex;
+    position: relative;
+    top: -1198px;
+    left: 745px;
+    width: 514px;
+    height: 436px;
+    background: var(--photos); 
+}
+.map{
+    display: flex;
+    position: relative;
+    background-color: var(--border);
+    height: 445px;
+    width: 1041px;
+    top: -1539px;
+    left: 125px;
+}
+
+.text-box2{
+    display: flex;
+    position: relative;
+    top: -2100px;
+    left: -5px;
+    width: 263px;
+    text-align: left;
+    font: normal normal normal 15px/22px Lato;
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--text);
+    padding-left: 126px;
 }

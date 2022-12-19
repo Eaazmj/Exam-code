@@ -5,3 +5,23 @@
     width: 520px;
     height: 120px;
     background: var(--text) 0% 0% no-repeat padding-box;
+
+    <div id="lyrum">
+<div id="text">
+
+function resetIt(){
+    // lyrum
+    lyrum.style.fontSize = "1rem"
+    parnasse.style.fontSize = "1rem"
+    yyy.style.fontSize = "1rem"
+    zzz.style.fontSize = "1rem"
+}
+
+function changeImage(){
+
+    resetIt()
+    xxx.src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/083/original/cfg3.png?1671151658"
+    myText.innerHTML = "Lorem"
+
+    
+}
