@@ -86,48 +86,42 @@ h2{
     padding-left: 126px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
- input[type=text], select, textarea {
-    width: 50%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-bottom: 10px; 
-}
-    
-/* Style the submit button */
-input[type=submit] {
-    background-color: var(--cta);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
-        
-/* When moving the mouse over the submit button, */
-input[type=submit]:hover {
-    background-color: var(--border);
-}
-        
-.container-submit{
+.container-error{
     position: relative;
     top: -623px;
 }
-.container-form {
-    position: relative;
-    top: -675px;
-    left: 152px;
-}
 
-.footer-foux{
-    position: relative;
-    top: -1195px;
-        width: 100%;
-        
-}
+
+
 .foux-photo{
     position: relative;
     top: -664px;
-    left: 1284px;
-    height: 537px;    
+    left: 705px;
+    height: 537px;
+    width: 961px;
+}
+.footer-foux{
+    position: relative;
+    top: -770px;
+    width: 100%;
+        
+}
+button{
+    background: var(--cta) 0% 0% no-repeat padding-box;
+    color: var(--white);
+    text-align: center;
+    font: normal normal normal 17px/23px Lato;
+
+}
+
+.cta{
+    background: var(--cta) 0% 0% no-repeat padding-box;
+    color: var(--white);
+    text-align: center;
+    font: normal normal normal 17px/23px Lato;
+    padding: 16px;
+    text-decoration: none;
+}
+.container-error a:hover {
+    text-decoration:underline;
 }

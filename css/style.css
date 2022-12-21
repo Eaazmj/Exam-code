@@ -60,6 +60,11 @@
     align-content: center;
 }
 
+.logo{
+    height: 25px;
+    padding: none;
+}
+
 .baner{
     width: 1255px;
     display: flex;
@@ -230,6 +235,12 @@ button{
     font: normal normal normal 17px/23px Lato;
 }
 
+.cta{
+    background: var(--cta) 0% 0% no-repeat padding-box;
+    color: var(--white);
+    text-align: center;
+    font: normal normal normal 17px/23px Lato;
+}
 .container{
     position: relative;
     top: -48px;
@@ -354,7 +365,7 @@ h2{
 
     .footer {
         position: relative;
-        display: flex;
+        display:none;
         left: 0;
         bottom: 0;
         width: 100%;
@@ -368,5 +379,12 @@ h2{
         justify-content: flex-start;
         align-items: center;
      }
+
+.footer-foux{
+    position: relative;
+    top: -1750px;
+        width: 100%;
+        
+}
 
      
