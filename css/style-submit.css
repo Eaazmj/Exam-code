@@ -121,7 +121,7 @@ input[type=submit]:hover {
 
 .footer-foux{
     position: relative;
-    top: -1195px;
+    top: -1327px;
         width: 100%;
         
 }
@@ -130,4 +130,59 @@ input[type=submit]:hover {
     top: -664px;
     left: 1284px;
     height: 537px;    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .desktop{
+        display: none;
+    }
+
+    .footer-foux{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+        right: 3px;
+    }
+    .navbar a{
+        padding: 10px;
+    }
+    .phone{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    .container-phone{
+        display: flex;
+
+    }
+    .text-phone{
+        position: relative;
+        width: 222px;
+        text-align: left;
+        font: normal normal normal 15px/22px Lato;
+        padding: 10px;
+        flex-wrap: wrap;
+        top: 295px;
+        left: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cta{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+        font: normal normal normal 25px/23px Lato;
+        margin-top: 10px;
+        background-color: var(--cta);
+        text-decoration:none;
+        color: var(--white);
+
+}
 }
